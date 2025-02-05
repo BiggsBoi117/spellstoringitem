@@ -1,5 +1,33 @@
+:root {
+  --primary-color: #8B9467; /*earthy green*/
+  --secondary-color: #3B3F54; /*dark, grey blue*/
+  --accent-color: #FFC080; /*bright, orange/yellow */
+}
+
+/*
+    General elements
+*/
+
+body {
+    background-image: url('../images/swamp.jpg');
+    background-size: cover;
+    padding-bottom: 60px;
+    font-family: 'Merriweather', serif;
+}
+
+header{
+    padding-bottom: 60px;
+}
+
+footer {
+    border-top: 4px solid var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
 html {
-  font-size: 14px;
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -8,15 +36,73 @@ html {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Felix Titling';
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+    main > section {
+      background-color: #FFFFFF;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+/*
+    Navbar/misc
+*/
+
+.custom-navbar {
+    background-image: linear-gradient(rgba(221, 221, 221, 0.9), rgba(221, 221, 221, 0.75)), url('../images/banner.jpg');
+    background-size: cover;
+    font-family: 'Felix Titling';
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+    .navbar-brand {
+        color: var(--accent-color);
+        font-weight:bold;
+        font-size:32px;
+    }
+
+.main_image {
+    max-width: 80px;
+}
+
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.content {
+    background-color: var(--primary-color);
 }
 
-body {
-  margin-bottom: 60px;
+/*
+    Body Content
+*/
+
+.container {
+    margin: auto;
+    margin-bottom: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+figure {
+    display: inline-block;
+    margin: 10px;
+}
+
+    figure img {
+        max-height: 150px;
+        border-radius: 10px;
+    }
