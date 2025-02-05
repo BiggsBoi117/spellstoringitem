@@ -15,6 +15,14 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+p{
+    font-family: 'Merriweatehr', serif;
+}
+    
+    .p-heading{
+        font-size: 20px;
+    }
+
 header{
     padding-bottom: 60px;
 }
@@ -79,10 +87,6 @@ main {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-.content {
-    background-color: var(--primary-color);
-}
-
 /*
     Body Content
 */
@@ -95,6 +99,10 @@ main {
     background-color: var(--primary-color);
     border: 2px solid var(--secondary-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    background-color: var(--primary-color);
 }
 
 figure {
