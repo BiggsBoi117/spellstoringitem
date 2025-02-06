@@ -10,6 +10,7 @@
 
 body {
     background-image: url('../images/swamp.jpg');
+    background-position: 0 80px;
     background-size: cover;
     padding-bottom: 60px;
     font-family: 'Merriweather', serif;
@@ -25,6 +26,7 @@ p{
 
 header{
     padding-bottom: 60px;
+    font-weight:bold;
 }
 
 footer {
@@ -67,16 +69,23 @@ main {
 */
 
 .custom-navbar {
-    background-image: linear-gradient(rgba(221, 221, 221, 0.9), rgba(221, 221, 221, 0.75)), url('../images/banner.jpg');
+    background-image: linear-gradient(rgba(221, 221, 221, 0.85), rgba(59, 63, 84, 0.75)), url('../images/banner.jpg');
+    background-position: 0 0 80%;
     background-size: cover;
     font-family: 'Felix Titling';
     border-bottom: 4px solid var(--secondary-color);
 }
 
     .navbar-brand {
-        color: var(--accent-color);
-        font-weight:bold;
         font-size:32px;
+    }
+
+    a {
+        color: black !important;
+    }
+
+    a:hover{
+        color: var(--accent-color) !important;
     }
 
 .main_image {
