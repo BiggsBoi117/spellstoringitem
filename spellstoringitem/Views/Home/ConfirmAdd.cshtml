@@ -1,0 +1,19 @@
+﻿@* @model NewSpell *@
+@{
+	ViewData["Title"] = "Confirm";
+}
+
+<div class="container text-center">
+	<h1>Spell Added (but not really)</h1>
+</div>
+
+<div class="container text-center">
+	<p class="p-fancy p-heading">Spell Name:</p> 
+		<p class="hl-container">@Model.SpellName</p>
+	<p class="p-fancy p-heading">Spell Description:</p>
+		<p class="hl-container">@Model.SpellDescription</p>
+	<p class="p-fancy p-heading">Spell Source:</p>
+		<p class="hl-container">@Model.Source</p>
+
+	<a href="/Home/Index"><h5>Back to home</h5></a>
+</div>

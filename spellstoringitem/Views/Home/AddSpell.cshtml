@@ -1,0 +1,31 @@
+﻿@model NewSpell
+@{
+	ViewData["Title"] = "Add Spell";
+}
+
+<div class="container">
+	<h1>@ViewData["Title"]</h1>
+</div>
+
+<div class="container">
+	<p class="p-heading">
+		Add a spell to the database
+	</p>
+	<form method="post">
+		<label asp-for="SpellName">Name:</label>
+		<input asp-for="SpellName"/>
+		<br />
+		<label asp-for="SpellDescription">Description:</label>
+		<textarea asp-for="SpellDescription">I didn't ask how big the room was...</textarea>
+		<br />
+		<label asp-for="Source">Source:</label>
+		<select asp-for="Source">
+			<option value="" selected disabled hidden>-Source-</option>
+			<option value="PHB">Player's Handbook</option>
+			<option value="TCE">Tasha's Cauldron of Everything</option>
+			<option value="HB">Homebrew/Custom</option>
+		</select>
+		<br />
+		<button type="submit">Submit</button>
+	</form>
+</div>

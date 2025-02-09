@@ -20,10 +20,10 @@ $(document).ready(function () {
 
     // Fade in the images one at a time
     var images = $("#char1, #char2, #char3");
-    var delay = 1000;
+    var delay = 0;
     images.each(function () {
         $(this).delay(delay).fadeTo(2000, 1);
-        delay += 500; // increase the delay by 500ms for each image
+        delay += 350; // increase the delay by 500ms for each image
     });
 });
 
@@ -36,6 +36,6 @@ $(document).ready(function () {
     var delay = 1000;
     images.each(function () {
         $(this).delay(delay).fadeTo(2000, 1);
-        delay += 500; // increase the delay by 500ms for each image
+        delay += 350; // increase the delay by 500ms for each image
     });
 });
