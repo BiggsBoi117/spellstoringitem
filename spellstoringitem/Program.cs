@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using spellstoringitem.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<spellstoringitemContext>(options =>
+    options.UseSqlite(builder.Configuration[("ConnectionStrings:spellstoringitemConection")]));
 
 var app = builder.Build();
 

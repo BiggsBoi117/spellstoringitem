@@ -6,6 +6,13 @@ namespace spellstoringitem.Controllers
 {
     public class HomeController : Controller
     {
+        private spellstoringitemContext _ssi;
+        
+        public HomeController(spellstoringitemContext temp)
+        {
+            _ssi = temp;
+        }
+        
         //logger will be implemented later to track database interactions to track adding/deleting homebrew content
         //private readonly ILogger<HomeController> _logger;
 
